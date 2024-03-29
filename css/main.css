@@ -1,0 +1,927 @@
+/*общее*/
+html, body{
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'CirceRounded-Regular';
+    background-color: #FFFDF8;
+}
+
+a{ 
+    color: inherit;
+}
+
+*{
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'CirceRounded-Regular';
+    font-style: normal;
+    src: url('../font/CirceRounded-Regular.ttf');
+}
+
+p{
+    font-size: 1.38vw;
+    line-height: 1.53vw;
+    font-family: 'CirceRounded-Regular';
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.36vw;
+    line-height: 2.5vw;
+    font-family: 'CirceRounded-Regular';
+    font-style: normal;
+    color: #FFFDF8;
+}
+
+h2{
+    font-size: 2.08vw;
+    line-height: 2.2vw;
+    font-family: 'CirceRounded-Regular';
+    font-style: normal;
+    color: #FFFDF8;
+}
+
+.home, .draw, .burn, .move{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.default__scene-mob, .home__scene-mob{
+    display: none;
+}
+
+/*main pages*/
+
+.draw, .burn, .move, .scale-finish{
+    display: none;
+}
+
+.cursor{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 27vw;
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    background-color: #FFA894;
+    animation: sphere 4s ease-in-out infinite;
+}
+
+@keyframes sphere {
+    0%{background-color: #FFA894;}
+    50%{background-color: #FFCFEC;}
+    100%{background-color: #FFA894;}
+}
+
+.home{
+    height: 62.5vw;
+}
+
+.default__scene{
+    position: absolute;
+    width: 100%;
+    height: 62.5vw;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #2354A0;
+    transition: all 3s ease-in-out;
+
+}
+
+.star-bg{
+    position: absolute;
+    width: 100%;
+    height: 62.5vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    z-index: 1;
+}
+
+.gb{
+    width: 373%;
+    height: 373%;
+    margin-top: -71vw;
+    filter: blur(5.6vw);
+}
+
+.circle-bg{
+    position: absolute;
+    width: 100%;
+    height: 62.5vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    z-index: 4;
+    
+}
+
+.move-bg{
+    width: 153%;
+    height: 153%;
+    margin-top: -11vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    position: absolute;
+    z-index: 16;
+}
+
+.ret{
+    width: 7.7vw;
+    height: 2.4vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.ret:hover{
+    transform: scale(1.1);
+}
+
+.answer{
+    width: 4.9vw;
+    height: 4.1vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.answer:hover{
+    transform: scale(1.1);
+}
+
+.name__cover{
+    position: absolute;
+    z-index: 3;
+    margin-left: 3vw;
+    animation: up-down 6s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-2vw);}
+    100% {transform: translateY(0);}
+}
+
+.name1{
+    margin-left: 2.3vw;
+    margin-top: 5.6vw;
+    margin-bottom: -4.5vw;
+}
+
+.word1{
+    width: 77.4vw;
+    height: 22.6vw;
+}
+
+.name2{
+    margin-left: 5.1vw;
+    margin-bottom: -4.5vw;
+}
+
+.word2{
+    width: 61.5vw;
+    height: 17.1vw;
+}
+
+.word3{
+    width: 94.5vw;
+    height: 22.4vw;
+}
+
+.home__scene{
+    position: absolute;
+    width: 100%;
+    height: 62.5vw;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(../img/star__dark.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 3s ease-in-out;
+}
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    position: absolute;
+    z-index: 16;
+}
+
+.circle-bg2{
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    z-index: 4; 
+    margin-left: 9.5vw;
+    margin-top: 8vw;
+}
+
+.alor{
+    width: 81vw;
+    height: 44.4vw;
+}
+
+.title-all-button{
+    position: absolute;
+    z-index: 6;
+    margin-left: 15.2vw;
+    margin-top: 10.6vw;
+}
+
+.title1{
+    display: flex;
+    width: 24vw;
+    margin-bottom: 3vw;
+    transition: all 0.7 ease-in-out;
+}
+
+.title1:hover{
+    transform: scale(1.05);
+}
+
+.text-but{
+    margin-left: -6.8vw;
+    margin-top: 2.6vw;
+}
+
+.gaming1{
+    width: 7.7vw;
+    height: 7.7vw;
+}
+
+.title2{
+    display: flex;
+    width: 19.2vw;
+    margin-bottom: 24.4vw;
+    margin-left: 49vw;
+    transition: all 0.7 ease-in-out;
+}
+
+.title2:hover{
+    transform: scale(1.05);
+}
+
+.photo-but2{
+    margin-left: -5.8vw;
+}
+
+.text-but2{
+    z-index: 8;
+    margin-top: 2.6vw;
+}
+
+.gaming2{
+    width: 6.9vw;
+    height: 6.9vw;
+}
+
+.title3{
+    display: flex;
+    width: 29vw;
+    margin-left: 12.3vw;
+    transition: all 0.7 ease-in-out;
+}
+
+.title3:hover{
+    transform: scale(1.05);
+}
+
+.photo-but3{
+    margin-left: -14.8vw;
+}
+
+.text-but3{
+    z-index: 8;
+    margin-top: 1.2vw;
+}
+
+.gaming3{
+    width: 5.1vw;
+    height: 5.1vw;
+}
+
+/*второй блок*/
+
+.draw{
+    background-color: #2354A0;
+    height: 62.5vw;
+}
+
+.mycloud{
+    position: absolute;
+    z-index: 18;
+}
+
+.cloud1{
+    margin-left: 2vw;
+    margin-top: -15vw;
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    background-image: url(../img/big-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloud2{
+    margin-left: 9vw;
+    margin-top: -1vw;
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    background-image: url(../img/med-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloud3{
+    margin-left: 30vw;
+    margin-top: -2vw;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    background-image: url(../img/mini-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloud4{
+    margin-left: 60vw;
+    margin-top: -14vw;
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    background-image: url(../img/small-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloud5{
+    margin-left: 72vw;
+    margin-top: -9vw;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    background-image: url(../img/med-rgad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloud6{
+    margin-left: 60vw;
+    margin-top: -1vw;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    background-image: url(../img/smed-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#but-draw{
+    width: 16.4vw;
+    height: 4.6vw;
+    position: absolute;
+    background-color: #FFA894;
+    border-radius: 6.9vw;
+    margin-left: 41.8vw;
+    /*margin-bottom: 2.8vw;*/
+    margin-top: 4vw;
+    transition: all 0.7 ease-in-out;
+    z-index: 8;
+}
+
+#but-draw:hover{
+    transform: scale(1.05);
+}
+
+.but-or{
+    margin-left: 3.5vw;
+    padding-top: 1.1vw;
+}
+
+.out-t{
+    color: #FFFDF8;
+}
+
+.outline-text{
+    position: relative;
+    z-index: 3;
+    margin-top: 11vw;
+    margin-left: 3.8vw;
+    margin-bottom: 5.6vw;
+}
+
+.text-mini{
+    position: absolute;
+    margin-left: 42vw;
+    margin-top: -20vw;
+    z-index: 12;
+}
+
+.p-1{
+    color: #FFFDF8;
+    opacity: 0.4;
+}
+
+.tx-4, .tx-3, .tx-2, .tx-1, .tx-5, .tx-6, .tx-7{
+    width: 12.5vw;
+    height: 1.53vw;
+}
+
+.out-t, .out-t1, .out-t2, .out-t3, .out-t4, .out-t5, .out-t6{
+    color: #FFFDF8;
+    width: 12.5vw;
+}
+
+.tx-4{
+    transform: rotate(34deg);
+    margin-left: 32.8vw;
+}
+
+.tx-3{
+    transform: rotate(-3deg);
+    margin-left: 2vw;
+    margin-top: 7.7vw;
+}
+
+.tx-5{
+    transform: rotate(21.5deg);
+    margin-left: 71.6vw;
+    margin-top: -8vw;
+}
+
+.tx-6{
+    transform: rotate(-3.9deg);
+    margin-left: 85.5vw;
+    margin-top: 7.7vw;
+}
+
+.tx-2{
+    transform: rotate(7deg);
+    margin-top: 8.4vw;
+}
+
+.tx-7{
+    transform: rotate(29deg);
+    margin-top: 9.2vw;
+    margin-left: 83vw;
+}
+
+.tx-1{
+    transform: rotate(-15deg);
+    margin-top: -1.5vw;
+    margin-bottom: 5.6vw;
+    margin-left: 16vw;
+}
+
+/*третий блок*/
+
+.burn{
+    color: #FFFDF8;
+    height: 71vw;
+}
+
+.text-mini2{
+    width: 12.8vw;
+    margin-left: 2.8vw;
+    margin-top: 14.3vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.p-2{
+    color: #2354A0;
+    opacity: 0.4;
+}
+
+#buty{
+    width: 7.2vw;
+    height: 4.7vw;
+    background-color: #2354A0;
+    border-radius: 7vw;
+    margin-top: 63vw;
+    position: absolute;
+    margin-left: 90vw;
+    z-index: 20;
+    transition: all 0.7 ease-in-out;
+}
+
+#buty:hover{
+    transform: scale(1.05);
+}
+
+.but-ph{
+    margin-left: 2vw;
+    margin-top: 1.4vw;
+    width: 3.4vw;
+    height: 1.8vw;
+}
+
+.shine-circle{
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    height: 71vw;
+}
+
+#sh1{
+    margin-left: 22vw;
+    margin-top: -2vw;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    background-image: url(../img/med-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh2{
+    margin-left: 60vw;
+    margin-top: 4.6vw;
+    width: 10.3vw;
+    height: 10.3vw;
+    position: absolute;
+    background-image: url(../img/bmed-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh3{
+    margin-left: 39vw;
+    margin-top: 11.4vw;
+    width: 5.1vw;
+    height: 5.1vw;
+    position: absolute;
+    background-image: url(../img/med-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh4{
+    margin-left: 91vw;
+    margin-top: 13vw;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    background-image: url(../img/small-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh5{
+    margin-left: 71vw;
+    margin-top: 24vw;
+    width: 16.5vw;
+    height: 16.5vw;
+    position: absolute;
+    background-image: url(../img/sbig-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh6{
+    margin-left: 13vw;
+    margin-top: 28vw;
+    width: 10.7vw;
+    height: 10.7vw;
+    position: absolute;
+    background-image: url(../img/big-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh7{
+    margin-left: 39vw;
+    margin-top: 30vw;
+    width: 6.9vw;
+    height: 6.9vw;
+    position: absolute;
+    background-image: url(../img/smed-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh8{
+    margin-left: 53vw;
+    margin-top: 41vw;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    background-image: url(../img/small-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh9{
+    margin-left: 91vw;
+    margin-top: 40vw;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    background-image: url(../img/small-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh-1{
+    margin-left: 8vw;
+    margin-top: 50vw;
+    width: 5.1vw;
+    height: 5.1vw;
+    position: absolute;
+    background-image: url(../img/med-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh-2{
+    margin-left: 31vw;
+    margin-top: 50vw;
+    width: 13.2vw;
+    height: 13.2vw;
+    position: absolute;
+    background-image: url(../img/big-or.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh-3{
+    margin-left: 68vw;
+    margin-top: 54vw;
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    background-image: url(../img/med-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sh-4{
+    margin-left: 13vw;
+    margin-top: 67vw;
+    width: 6.9vw;
+    height: 6.9vw;
+    position: absolute;
+    background-image: url(../img/smed-pink.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*четвертый блок*/
+
+.move{
+    background-color: #2354A0;
+    height: 62.5vw;
+}
+
+.text-mini3{
+    position: absolute;
+    z-index: 9;
+    width: 9.3vw;
+    margin-top: 28vw;
+    margin-left: 25vw;
+}
+
+.elements-cloud{
+    position: absolute;
+    z-index: 6;
+    height: 62.5;
+}
+
+#cld{
+    margin-left: -15vw;
+    margin-top: 30vw;
+    width: 63vw;
+    height: 51vw;
+    position: absolute;
+    z-index: 7;
+    background-image: url(../img/big-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld1{
+    margin-left: 54vw;
+    margin-top: 3vw;
+    width: 34vw;
+    height: 29.5vw;
+    position: absolute;
+    z-index: 7;
+    background-image: url(../img/cloud__end-trig.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld2{
+    margin-left: 28vw;
+    margin-top: -5vw;
+    width: 22vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/small__cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld3{
+    margin-left: 38vw;
+    margin-top: -1vw;
+    width: 22vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 9;
+    background-image: url(../img/small__cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld4{
+    margin-left: 72vw;
+    margin-top: 4vw;
+    width: 22vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/small__cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld5{
+    margin-left: -8vw;
+    margin-top: 12vw;
+    width: 28vw;
+    height: 24vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/med-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld6{
+    margin-left: 9vw;
+    margin-top: 23vw;
+    width: 13.9vw;
+    height: 11vw;
+    position: absolute;
+    z-index: 9;
+    background-image: url(../img/vsmall-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld7{
+    margin-left: 48vw;
+    margin-top: 24vw;
+    width: 26vw;
+    height: 22vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/med-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld8{
+    margin-left: 78vw;
+    margin-top: 36vw;
+    width: 22vw;
+    height: 18vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/small__cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld9{
+    margin-left: 60vw;
+    margin-top: 47vw;
+    width: 13.9vw;
+    height: 10.7vw;
+    position: absolute;
+    z-index: 8;
+    background-image: url(../img/vsmall-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld0{
+    margin-left: 50vw;
+    margin-top: 4vw;
+    width: 63vw;
+    height: 51vw;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/big-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld-1{
+    margin-left: 1vw;
+    margin-top: 30vw;
+    width: 26vw;
+    height: 22vw;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/med-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld-2{
+    margin-left: 34vw;
+    margin-top: 28vw;
+    width: 26vw;
+    height: 22vw;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/med-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld-3{
+    margin-left: 4vw;
+    margin-top: 4vw;
+    width: 26vw;
+    height: 22vw;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/med-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld01{
+    margin-left: 16vw;
+    margin-top: 22vw;
+    width: 63vw;
+    height: 51vw;
+    position: absolute;
+    z-index: 11;
+    background-image: url(../img/big-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cld02{
+    margin-left: 20vw;
+    margin-top: -15vw;
+    width: 63vw;
+    height: 51vw;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/big-cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*finish*/
+
+.scale-finish{
+    background-color: #2354A0;
+}
+
+.main-el{
+    margin-left: 5vw;
+    height: 71.4vw;
+}
+
+.ending{
+    width: 90vw;
+    height: 71vw;
+    animation: 5s fin linear infinite;
+}
+
+
+@keyframes fin {
+    0% {transform: scale(1); }
+    50% {transform: scale(1.2); }
+    100% {transform: scale(1); }
+}

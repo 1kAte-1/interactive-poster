@@ -1,0 +1,784 @@
+
+@media all and (max-device-width:561px) {
+    
+    .default__scene-mob, .home__scene-mob {
+        display: block;
+    }
+
+    .default__scene, .outline-text, .home__scene{
+        display: none;
+    }
+
+}
+
+@media all and (min-device-width:561px) {
+
+    .default__scene-mob, .home__scene-mob {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-device-width: 560px) and (max-device-width: 1024px){
+
+    h1{
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+
+    h2{
+        font-size: 1.8vw;
+        line-height: 1.9vw;
+    }
+
+    p{
+        font-size: 1.3;
+        line-height: 1.4vw;
+    }
+
+    .home, .draw, .burn, .move, .scale-finish, .star-bg, .default__scene, .circle-bg, .home__scene, .shine-cicrcle, .main-el, .ending{
+        height: 75vw;
+    }
+
+    .home__scene{
+        margin-top: 75vw;
+    }
+
+    .circle-bg2{
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        justify-content: center; 
+        align-content: center;
+        z-index: 4; 
+        margin-left: 10.5vw;
+        margin-top: 17.5vw;
+    }
+
+    .alor{
+        width: 82vw;
+        height: 45vw;
+    }
+
+    .title-all-button{
+        position: absolute;
+        z-index: 6;
+        margin-left: 16vw;
+        margin-top: 18vw;
+    }
+    
+
+    .gb{
+        margin-top: -80vw;
+    }
+
+    .name1{
+        margin-top: 13vw;
+        margin-bottom: -1vw;
+    }
+
+    .name2{
+        margin-bottom: -1vw;
+    }
+
+    .tx-3{
+        margin-top: 12vw;
+    }
+
+    .tx-5{
+        margin-top: -5vw;
+    }
+
+    .tx-6{
+        margin-top: 13vw;
+    }
+
+    .tx-2{
+        margin-top: 14vw;
+    }
+
+    .tx-7{
+        margin-top: 10vw;
+    }
+
+    .tx-1{
+        margin-top: -1vw;
+    }
+
+    .text-mini{
+        margin-top: -30vw;
+    }
+
+    #but-draw{
+        width: 15vw;
+        height: 4.2vw;
+    }
+
+    #buty{
+        margin-top: 67vw;
+    }
+
+    .ret{
+        width: 9vw;
+        height: 3vw;
+    }
+
+    .answer{
+        width: 5.3vw;
+        height: 4.6vw;
+    }
+
+    #cld2{
+        margin-top: -2vw;
+    }
+
+    #cld02{
+        margin-left: 30vw;
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 560px){
+   
+
+    .home, .draw, .burn, .move, .scale-finish, .star-bg, .default__scene-mob, .circle-bg-mob, .home__scene-mob, .shine-cicrcle, .main-el{
+        height: 178vw;
+    }
+
+    h1{
+        font-size: 5.6vw;
+        line-height: 6vw;
+    }
+
+    h2{
+        font-size: 5vw;
+        line-height: 5.6vw; 
+    }
+
+    p{
+        font-size: 3.3vw;
+        line-height: 3.4vw;
+    }
+
+    .home{
+        height: 178vw;
+    }
+
+    .default__scene-mob{
+        position: absolute;
+        width: 100%;
+        height: 178vw;
+        overflow: hidden;
+        z-index: 2;
+        background-color: #2354A0;
+        transition: all 3s ease-in-out;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 88vw;
+        margin-top: 4vw;
+        margin-left: 5.6vw;
+        position: absolute;
+        z-index: 5;
+    }
+    
+    .header2{
+        display: flex;
+        justify-content: space-between;
+        width: 88vw;
+        margin-top: 4vw;
+        margin-left: 5.6vw;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .ret{
+        width: 17.8vw;
+        height: 5.3vw;
+    }
+
+    .answer{
+        width: 8.9vw;
+        height: 7.4vw;
+    }
+
+    .name__cover-mob{
+        position: absolute;
+        width: 92vw;
+        height: 153vw;
+        margin-top: 24vw;
+        margin-left: 4.4vw;
+        overflow: hidden;
+        z-index: 3;
+        background-image: url(../img/name-mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: up-down 4s ease-in-out infinite;
+    }
+
+    @keyframes up-down {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-4vw);}
+        100% {transform: translateY(0);}
+    }
+    
+
+    .circle__bg-mob{
+        position: absolute;
+        width: 150%;
+        height: 190vw;
+        margin-top: -5vw;
+        margin-left: -22vw;
+        overflow: hidden;
+        z-index: 4;
+        background-image: url(../img/bg-mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home__scene-mob{
+        position: absolute;
+        width: 100%;
+        height: 178vw;
+        overflow: hidden;
+        z-index: 1;
+        background-image: url(../img/star__dark.png);
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title-all-button-mob{
+        position: absolute;
+        z-index: 6;
+        margin-left: 11vw;
+        margin-top: 44vw;
+    }
+    
+    .title1-mob{
+        display: flex;
+        width: 56.7vw;
+        margin-bottom: 18vw;
+        margin-left: 8vw;
+        transition: all 0.7 ease-in-out;
+    }
+
+    .title1:hover{
+        transform: scale(1.05);
+    }
+    
+    .text-but-mob{
+        margin-left: -10vw;
+        margin-top: 3.6vw;
+    }
+    
+    .gaming1-mob{
+        width: 13vw;
+        height: 13vw;
+    }
+    
+    .title2-mob{
+        display: flex;
+        width: 46vw;
+        margin-bottom: 30vw;
+        margin-left: 37vw;
+        transition: all 0.7 ease-in-out;
+    }
+
+    .title2:hover{
+        transform: scale(1.05);
+    }
+    
+    .photo-but2-mob{
+        margin-left: -9vw;
+    }
+    
+    .text-but2-mob{
+        z-index: 8;
+        margin-top: 2.5vw;
+    }
+    
+    .gaming2-mob{
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    .title3-mob{
+        display: flex;
+        width: 68vw;
+        transition: all 0.7 ease-in-out;
+    }
+
+    .title3:hover{
+        transform: scale(1.05);
+    }
+    
+    .photo-but3-mob{
+        margin-left: -44.4vw;
+    }
+    
+    .text-but3-mob{
+        z-index: 8;
+        margin-top: 2.8vw;
+    }
+    
+    .gaming3-mob{
+        width: 8.9vw;
+        height: 8.9vw;
+    }
+
+    .circle-bg2-mob{
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        justify-content: center; 
+        align-content: center;
+        z-index: 4; 
+        margin-left: 13vw;
+        margin-top: 12vw;
+    }
+
+    .alor2{
+        width: 71.7vw;
+        height: 156vw;
+    }
+
+
+
+    .text-mini{
+        margin-top: 87vw;
+        margin-left: 31.7vw;
+    }
+
+    #but-draw{
+        width: 39.4vw;
+        height: 11.4vw;
+        background-color: #FFA894;
+        border-radius: 27.8vw;
+        margin-left: 30vw;
+        margin-top: 161vw;
+    }
+    
+    .but-or{
+        margin-left: 8.5vw;
+        padding-top: 2.5vw;
+    }
+
+    .cloud1{
+        margin-left: 3vw;
+        margin-top: 125vw;
+        width: 35vw;
+        height: 35vw;
+        position: absolute;
+        background-image: url(../img/big-gradient.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cloud2{
+        margin-left: 7vw;
+        margin-top: 158vw;
+        width: 13vw;
+        height: 13vw;
+        position: absolute;
+        background-image: url(../img/med-white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cloud3{
+        margin-left: 70vw;
+        margin-top: 100vw;
+        width: 16vw;
+        height: 16vw;
+        position: absolute;
+        background-image: url(../img/mini-white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cloud4{
+        margin-left: 78vw;
+        margin-top: 130vw;
+        width: 12vw;
+        height: 12vw;
+        position: absolute;
+        background-image: url(../img/small-white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cloud5{
+        margin-left: 50vw;
+        margin-top: 120vw;
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        background-image: url(../img/med-rgad.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cloud6{
+        margin-left: 78vw;
+        margin-top: 150vw;
+        width: 18vw;
+        height: 18vw;
+        position: absolute;
+        background-image: url(../img/smed-white.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .shine-cicrcle{
+        width: 100%;
+        height: 178vw;
+    }
+
+    .text-mini2{
+        width: 31vw;
+        margin-left: 5.6vw;
+        margin-top: 33.6vw;
+        position: absolute;
+        z-index: 10;
+    }
+
+    #buty{
+        width: 18vw;
+        height: 11.4vw;
+        background-color: #2354A0;
+        border-radius: 27.8vw;
+        margin-top: 162vw;
+        margin-left: 77vw;
+    }
+    
+    .but-ph{
+        margin-left: 5vw;
+        margin-top: 3vw;
+        width: 8.4vw;
+        height: 4.6vw;
+    }
+
+    #sh1{
+        margin-left: 10vw;
+        margin-top: 138vw;
+        width: 14vw;
+        height: 14vw;
+        position: absolute;
+        background-image: url(../img/med-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh2{
+        margin-left: 6vw;
+        margin-top: 85vw;
+        width: 16vw;
+        height: 16vw;
+        position: absolute;
+        background-image: url(../img/bmed-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh3{
+        margin-left: 41vw;
+        margin-top: 20vw;
+        width: 7vw;
+        height: 7vw;
+        position: absolute;
+        background-image: url(../img/med-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh4{
+        margin-left: 41vw;
+        margin-top: 159vw;
+        width: 3vw;
+        height: 3vw;
+        position: absolute;
+        background-image: url(../img/small-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh5{
+        margin-left:  34vw;
+        margin-top: 114vw;
+        width: 26vw;
+        height: 26vw;
+        position: absolute;
+        background-image: url(../img/sbig-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh6{
+        margin-left: 53vw;
+        margin-top: -3vw;
+        width: 16vw;
+        height: 16vw;
+        position: absolute;
+        background-image: url(../img/big-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh7{
+        margin-left: 13vw;
+        margin-top: 58vw;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        background-image: url(../img/smed-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh8{
+        margin-left: 72.5vw;
+        margin-top: 70vw;
+        width: 6.4vw;
+        height: 6.4vw;
+        position: absolute;
+        background-image: url(../img/small-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh9{
+        margin-left: 73vw;
+        margin-top: 137vw;
+        width: 6.4vw;
+        height: 6.4vw;
+        position: absolute;
+        background-image: url(../img/small-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh-1{
+        margin-left: 55vw;
+        margin-top: 50vw;
+        width: 7vw;
+        height: 7vw;
+        position: absolute;
+        background-image: url(../img/med-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh-2{
+        margin-left: 67.5vw;
+        margin-top: 22.5vw;
+        width: 21vw;
+        height: 21vw;
+        position: absolute;
+        background-image: url(../img/big-or.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh-3{
+        margin-left: 48vw;
+        margin-top: 86vw;
+        width: 7vw;
+        height: 7vw;
+        position: absolute;
+        background-image: url(../img/med-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #sh-4{
+        margin-left: 74vw;
+        margin-top: 95vw;
+        width: 14vw;
+        height: 14vw;
+        position: absolute;
+        background-image: url(../img/smed-pink.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+    .text-mini3{
+        width: 22.5vw;
+        margin-left: 30vw;
+        margin-top: 55.6vw;
+        position: absolute;
+        z-index: 10;
+    }
+
+    #cld{
+        margin-left: -59vw;
+        margin-top: 98vw;
+        width: 147.5vw;
+        height: 114vw;
+        position: absolute;
+        z-index: 7;
+        background-image: url(../img/big-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld1{
+        margin-left: 52vw;
+        margin-top: 20vw;
+        width: 60vw;
+        height: 52vw;
+        position: absolute;
+        z-index: 7;
+        background-image: url(../img/cloud__end-trig.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld2{
+        margin-left: 32vw;
+        margin-top: 5vw;
+        width: 54vw;
+        height: 44vw;
+        position: absolute;
+        z-index: 8;
+        background-image: url(../img/small__cloud.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld3{
+        margin-left: 34vw;
+        margin-top: 20vw;
+        width: 54vw;
+        height: 44vw;
+        position: absolute;
+        z-index: 9;
+        background-image: url(../img/small__cloud.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld4{
+        margin-left: 30vw;
+        margin-top: 55vw;
+        width: 102vw;
+        height: 90vw;
+        position: absolute;
+        z-index: 8;
+        background-image: url(../img/small__cloud.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld5{
+        margin-left: -29vw;
+        margin-top: 38vw;
+        width: 60vw;
+        height: 52vw;
+        position: absolute;
+        z-index: 8;
+        background-image: url(../img/med-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld6{
+        margin-left: 80vw;
+        margin-top: 12vw;
+        width: 30vw;
+        height: 22vw;
+        position: absolute;
+        z-index: 9;
+        background-image: url(../img/vsmall-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld7{
+        margin-left: 10vw;
+        margin-top: 72vw;
+        width: 58vw;
+        height: 50vw;
+        position: absolute;
+        z-index: 8;
+        background-image: url(../img/med-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld8{
+        margin-left: -6vw;
+        margin-top: 14vw;
+        width: 50vw;
+        height: 42vw;
+        position: absolute;
+        z-index: 8;
+        background-image: url(../img/small__cloud.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld9{
+        margin-left: -4vw;
+        margin-top: 25vw;
+        width: 32vw;
+        height: 26vw;
+        position: absolute;
+        z-index: 9;
+        background-image: url(../img/vsmall-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld0{
+        margin-left: -4vw;
+        margin-top: 72vw;
+        width: 110vw;
+        height: 102vw;
+        position: absolute;
+        z-index: 10;
+        background-image: url(../img/big-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld-1{
+        margin-left: 52vw;
+        margin-top: 30vw;
+        width: 70vw;
+        height: 64vw;
+        position: absolute;
+        z-index: 10;
+        background-image: url(../img/med-cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #cld-2{
+        display: none;
+    }
+    
+    #cld-3{
+        display: none;
+    }
+    
+    #cld01{
+        display: none;
+    }
+    
+    #cld02{
+        display: none;
+    }
+
+    .ending{
+        margin-top: 54vw;
+    }
+
+}
